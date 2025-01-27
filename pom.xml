@@ -27,7 +27,7 @@
             </executions>
             <configuration>
                 <mainClass>edu.eci.cvds.patterns.archetype.App</mainClass>
-                <!-- Configuración de argumentos de entrada -->
+
                 <arguments>
                     <argument>${exec.args}</argument>
                 </arguments>
