@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd" 
+  root="true">
+  <modelVersion>4.1.0</modelVersion>
   <groupId>edu.eci.cvds</groupId>
   <artifactId>Patterns</artifactId>
   <packaging>jar</packaging>
@@ -8,9 +9,32 @@
   <name>Patterns</name>
   <url>http://maven.apache.org</url>
   <properties>
-  <maven.compiler.target>1.8</maven.compiler.target>
-  <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
   </properties>
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <mainClass>edu.eci.cvds.patterns.archetype.App</mainClass>
+
+                <arguments>
+                    <argument>${exec.args}</argument>
+                </arguments>
+            </configuration>
+        </plugin>
+    </plugins>
+  </build>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -19,6 +43,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<<<<<<< HEAD
 <build>
     <plugins>
         <plugin>
@@ -36,3 +61,6 @@
     </plugins>
 </build>
 </project>
+=======
+</project>
+>>>>>>> 69f64b51764f533b91a7aa35d02b38f1ae95be84
