@@ -111,14 +111,19 @@ Ejecutar nuevamente y verificar la salida en consola. Ej: Hello Pepito Perez!
 
 - Cree el archivo ShapeFactory.java en el directorio src/main/java/edu/eci/cvds/patterns/shapes implementando el patrón fábrica (Hint: https://refactoring.guru/design-patterns/catalog), haciendo uso de la instrucción switch-case de Java y usando las enumeraciones. ¿Cuál fábrica hiciste? y ¿Cuál es mejor?
 
+<image src="sources/shapefactory.png">
+
 Hicimos Factory Method
 
 - Ejecute múltiples veces la clase ShapeMain, usando el plugin exec de maven con los siguientes parámetros y verifique la salida en consola para cada una:
   - Sin parámetros
-    
+     <image src="sources/sinparametros.png">
   - Parámetro: qwerty
+    <image src="sources/qwerty.png">
   - Parámetro: pentagon
+    <image src="sources/pentagon.png">
   - Parámetro: Hexagon
+    <image src="sources/Hexagon.png">
 
     Solo Hexagon funciona correctamente porque es una clase de shapes.
 
