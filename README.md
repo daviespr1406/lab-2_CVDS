@@ -109,6 +109,11 @@ Ejecutar nuevamente y verificar la salida en consola. Ej: Hello Pepito Perez!
   <image src="sources/8.png" alt="pantallazo de error">
  <image src="sources/9.png" alt="pantallazo de error">
 
+- Cree el archivo ShapeFactory.java en el directorio src/main/java/edu/eci/cvds/patterns/shapes implementando el patrón fábrica (Hint: https://refactoring.guru/design-patterns/catalog), haciendo uso de la instrucción switch-case de Java y usando las enumeraciones. ¿Cuál fábrica hiciste? y ¿Cuál es mejor?
+
+Hicimos Factory Method
+  ![image](https://github.com/user-attachments/assets/479299e7-d82d-47b7-bcfb-b05e3cca09be)
+
 
  ## Integrantes
   - David Espinosa
